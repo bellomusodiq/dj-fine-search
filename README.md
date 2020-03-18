@@ -29,6 +29,10 @@ fields: list or tuple of the fields of the models that the search will be perfor
 
 perform_search function returns a list of model objects
 
+~~~
+>> pip install dj-fine-search
+~~~
+
 ```
 from django_fine_search import perform_search
 queryset = perform_search(model=MyModel, search_text='hello world', fields=["title", "text"])
