@@ -1,4 +1,3 @@
-README
 README.md
 setup.cfg
 setup.py

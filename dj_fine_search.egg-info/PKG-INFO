@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: dj-fine-search
-Version: 0.0.2
+Version: 0.0.3
 Summary: A key word based queryset search for django
 Home-page: https://github.com/bellomusodiq/dj-fine-search
 Author: Mayowa Bello
 Author-email: bmayowa25@gmail.com
 License: UNKNOWN
-Description: # Django Fine Search
+Description: 
+        # Django Fine Search
         
         https://github.com/bellomusodiq/dj-fine-search
         
@@ -50,6 +51,7 @@ Description: # Django Fine Search
         if we run perform_search on the MyModel with search_text='hello world' and fields=['title', 'fields']
         
         it will return all the queries
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
