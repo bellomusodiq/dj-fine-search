@@ -34,7 +34,7 @@ perform_search function returns a list of model objects
 ~~~
 
 ```
-from django_fine_search import perform_search
+from fine_search.fine_search import perform_search
 queryset = perform_search(model=MyModel, search_text='hello world', fields=["title", "text"])
 ```
 
