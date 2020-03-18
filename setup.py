@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("./README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="dj-fine-search-bellomusodiq", # Replace with your own username
-    version="0.0.1",
+    name="dj-fine-search",
+    version="0.0.2",
     author="Mayowa Bello",
     author_email="bmayowa25@gmail.com",
     description="A key word based queryset search for django",
