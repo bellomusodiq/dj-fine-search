@@ -4,7 +4,7 @@ from .readme import long_description
 
 setuptools.setup(
     name="dj-fine-search",
-    version="0.0.3",
+    version="0.0.4",
     author="Mayowa Bello",
     author_email="bmayowa25@gmail.com",
     description="A key word based queryset search for django",

@@ -3,6 +3,8 @@ long_description = """
 
 https://github.com/bellomusodiq/dj-fine-search
 
+https://pypi.org/project/dj-fine-search/
+
 
 Django fine search is package that performs search based on keywords. It allows word flexibility
 for performing filter in a queryset. 
@@ -36,15 +38,28 @@ perform_search function returns a list of model objects
 
 ```
 from fine_search.fine_search import perform_search
+# model based search
 queryset = perform_search(model=MyModel, search_text='hello world', fields=["title", "text"])
 ```
 
-assume we have the queryset below are result of MyModel.objects.all()
+~~~
+# assume we have the queryset below are result of MyModel.objects.all()
 queryset = [{"id": 1, "title": "some title", "text": "hello world, how are you"},
             {"id": 2, "title": "some title2", "text": "the world is good"}, 
             {"id": 3, "title": "some title3", "text": "world hello there, hello"}] 
+# if we run perform_search on the MyModel with search_text='hello world' and fields=['title', 'fields']
 
-if we run perform_search on the MyModel with search_text='hello world' and fields=['title', 'fields']
+# it will return all the queries
+~~~
 
-it will return all the queries
+it is also possible to perform search on queryset. e.g. queryset that has been filter initialy
+
+~~~
+from fine_search.fine_search import perform_search_queryset
+
+q = MyModel.objects.all()
+
+queryset = perform_serach_queryset(queryset=q, search_text='hello world', fields=["title", "text"])
+~~~
+
 """
